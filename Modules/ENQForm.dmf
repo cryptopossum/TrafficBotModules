@@ -1,7 +1,7 @@
 [INFO]
 Description="Search and click in duckduckgo results"
 Var_A_Tab="Keywords List"
-Var_B_Tab="Website to click"
+Var_B_Tab="https://wallet.enecuum.com/login"
 [/INFO]
 
 
@@ -10,9 +10,8 @@ $keyword=get_random_line("$var_a")
 $website=get_random_line("$var_b")
 
 
-navigate("https://duckduckgo.com/html/")
+navigate("https://faucet-bit.enecuum.com/")
 
-sleep("{1|2|3}")
 input("id","search_form_input_homepage","value","$keyword")
 
 sleep("1")
@@ -24,8 +23,8 @@ sleep("{10|12|14}")
 a("href","$website","click")
 input("value","Next","click")
 
-sleep("{10|12|14}")
-a("href","$website","click")
+sleep("{10")
+a("https://faucet-bit.enecuum.com/","$website","click")
 input("value","Next","click")
 
 sleep("{10|12|14}")
@@ -33,7 +32,7 @@ a("href","$website","click")
 input("value","Next","click")
 
 sleep("{10|12|14}")
-a("href","$website","click")
+a("https://faucet-bit.enecuum.com/","$website","click")
 input("value","Next","click")
 
 sleep("{10|12|14}")
