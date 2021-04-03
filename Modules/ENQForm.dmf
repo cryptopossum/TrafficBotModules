@@ -12,7 +12,6 @@ $keyword=get_random_line("$var_b")
 
 $website=get_random_line("$var_c")
 
-
 navigate("https://faucet-bit.enecuum.com/")
 
 input("id","search_form_input_homepage","value","$keyword")
